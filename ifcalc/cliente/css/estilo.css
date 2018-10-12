@@ -1,0 +1,47 @@
+form section, form footer, form header{
+	margin-top: 5px;
+	display:  flex;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+input{
+	flex-grow : 1;
+	margin-left: 5px;
+	text-align:center;
+}
+
+form section input{
+	width: 20%;
+}
+	
+input[type="submit"] {
+	flex-grow : 2;
+}
+input[type="reset"] {
+	width: 10px;
+}
+
+form{
+	width: 30%;
+	margin:auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 970px){
+	form section, form footer{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	form header input, form section input, form footer input{
+		flex-grow: 1;
+		width: 90%;
+		margin-bottom: 5px;
+		margin-left:0px;
+	}
+	
+	input[type="reset"] {
+		width: 30px;
+	}
+}
